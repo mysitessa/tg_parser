@@ -2,8 +2,8 @@ from decouple import config
 
 from telethon import TelegramClient, events
 
-api_id = config('API_ID')
-api_hash = config('API_HASH')
+api_id = '24376250'
+api_hash = '2a470c2c5891f05f67ab97c9437ca6a7'
 
 SOURCE_CHAT = -1001487687256
 TARGET_CHAT = -1003641327064
