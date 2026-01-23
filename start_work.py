@@ -1,11 +1,11 @@
 import os
 from telethon import TelegramClient, events
 
-api_id = 24376250
-api_hash = '2a470c2c5891f05f67ab97c9437ca6a7'
+api_id = os.getenv('API_ID')
+api_hash = os.getenv('API_HASH')
 
-SOURCE_CHAT = -1001487687256
-TARGET_CHAT = -1003641327064
+SOURCE_CHAT = os.getenv('SOURCE_CHAT')
+TARGET_CHAT = os.getenv('TARGET_CHAT')
 
 client = TelegramClient("session.session", api_id, api_hash)
 
